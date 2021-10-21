@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Cerema - Agence de Clermont-Ferrand</title>
-        <link rel="stylesheet" href="./css/reveal.min.css">
-        <link rel="stylesheet" href="./css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
     </head>
 
     <body>
@@ -15,6 +16,7 @@
             <h3>Agence de Clermont-Ferrand</h3>
             <img src=img/labo.png>
             <h4>Alexandre CUER - directeur adjoint</h4>
+			<img style="border: 0;" height=100 src=ceremaEN.svg>
           </section>
 
           <section>
@@ -94,7 +96,7 @@
           <section>
             <h3 style="background: #bce9ff;">Vibrations & minage - Terrassements rocheux</h3>
             <img style="border: 0;" height=250 src=img/surat_metro_2.jpg><img style="border: 0;" height=250 src=img/illustration_metro_surat.jpg>
-            <h6>métro ferroviaire de Surat (Inde - Gujarat)<h6><h5>expertise acoustique et vibratoire</h5>
+            <h6>métro ferroviaire de Surat (Inde - Gujarat)<h6><h5>expertise accoustique et vibratoire</h5>
           </section>
 
           <section>
@@ -108,7 +110,7 @@
           </section>
           <section>
             <h3 style="background: #fffcc2;">Mobilité, aménagement, sécurité routière</h3>
-            <img style="border: 0;" src=img/sécurité.png>
+            <img style="border: 0;" height=300 src=img/sécurité.png>
             <h5>Marsat : réflexion globale sur les circulations et l'aménagement de la commune</h5>
           </section>
           <section>
@@ -166,17 +168,24 @@
         </div>
       </div>
 
-      <script src="./js/reveal.min.js"></script>
+	  <script src="dist/reveal.js"></script>
+	  <script src="plugin/notes/notes.js"></script>
+	  <script src="plugin/markdown/markdown.js"></script>
+	  <script src="plugin/highlight/highlight.js"></script>
 
       <script>
-      // create presentation
-      Reveal.initialize({
-        controls: true,
-        keyboard: true,
-        progress: true,
-        history: true,
-        center: true
-      });
+			Reveal.initialize({
+				hash: true,
+				controls: true,
+				transition: 'convex',
+				keyboard: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				//plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
       </script>
     </body>
 </html>
